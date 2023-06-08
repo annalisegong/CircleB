@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bowling</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+
+    <!--[if lt IE 9]>
+    <html class="lt-ie9">
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a> 
+    </div>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+ 
+    <script src='js/device.min.js'></script> 
+</head>
+
+<body>
+<div class="page">
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header>
+
+        <div class="camera_container">
+            <div id="camera" class="camera_wrap">
+                <div data-thumb="images/slide1Thumb.jpg" data-src="images/slide2.jpg">
+                    <div class="camera_caption fadeIn">
+                    </div>
+                </div>
+                <!-- add thumb image that's small-->
+                <div data-thumb="images/slide1Thumb.jpg" data-src="images/slide1.jpg">
+                    <div class="camera_caption fadeIn">
+                    </div>
+                </div>
+                <!-- add thumb image that's small -->
+                <div data-thumb="images/slide1Thumb.jpg" data-src="images/bowling.jpg">
+                    <div class="camera_caption fadeIn">
+                    </div>
+                </div>
+            </div>
+
+            <div class="brand wow fadeIn">
+                <h1 class="brand_name">
+                    <a href="./">Circle "B"</a>
+                </h1>
+            </div>
+        </div>
+        
+        <div class="toggle-menu-container">
+            <nav class="nav">
+                <div class="nav_title"></div>
+                <a class="sf-menu-toggle fa fa-bars" href="#"></a>
+                <ul class="sf-menu">
+                    <li>
+                        <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                    <li class="active">
+                        <a href="#Bowling">Bowling</a>
+                        <ul>
+                            <li>
+                                <a href="#prices">Prices</a>
+                            </li>
+                            <li>
+                                <a href="#dailySpecials">Daily Specials</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./circleB.html">Menu</a>
+                        <ul>
+                            <li><a href="./circleB.html#Grill">Grill</a></li>
+                                <li>
+                                    <a href="./circleB.html#Bar_Specials">Bar</a>
+                                </li>
+                                <li>
+                                    <a href="./circleB.html#Nightly_Specials">Specials</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- update href to /leagues.html after I create this page-->
+                        <a href="#leagues">Leagues</a>
+                        <ul>
+                            <li><a href="#bowling_league">Bowling Leagues</a>
+                                    </li>
+                                    <li>
+                                        <a href="#volleyball_league">Volleyball Leagues</a>
+                                    </li>
+                                    <li>
+                                        <a href="#horseshoe_league">Horse Shoe Leagues</a>
+                                    </li>
+                                    <li>
+                                        <a href="#beanbag_league">Bean Bag Toss League </a>
+                                    </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- update href to /extras.html after I create this page-->
+                        <a href="#extras">Extras</a>
+                        <ul>
+                            <li><a href="#bands">Bands</a></li>
+                                <li>
+                                    <a href="#nflSundays">NFL Sunday</a>
+                                </li>
+                                <li>
+                                    <a href="#parties">Parties</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- update href to /contact.html after I create this page-->
+                        <a href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>            
+        </div>
+
+    </header>
+
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+    <main>
+        <section class="well">
+            <div class="container">
+                <h2><em>Welcome</em></h2>
+                <div class="decoration"></div>
+                <h2 id="Bowling">Bowling</h2>
+                <div class="row">
+                    <div class="grid_6">
+                        <div id="prices" class="img img__border"><div class="lazy-img" style="padding-bottom: 63.0282%;"><img data-src="images/prices.jpg" alt=""></div></div>
+                        <h3>Prices</h3>
+                        <p class="left indents-1">Rent a Lane:<br>
+                            M - TH: $21.95 per hour<br>
+                            F - SUN: $24.95 per hour<br><br>
+                            By the Game:<br>
+                            M - TH: $3.50 per game BEFORE 5:00 pm<br>
+                            M - TH: $3.72 per game AFTER 5:00 pm<br>
+                            F - SUN: $4.25 per game<br><br>
+                            Shoe Rental:<br>
+                            $2.00 per pair 
+                        </p>
+                    </div>
+                    <div class="grid_6">
+                        <div id="dailySpecials" class="img img__border"><div class="lazy-img" style="padding-bottom: 63.0282%;"><img data-src="images/bowlingSpecials.jpg" alt=""></div></div>
+                        <h3>Daily Specials</h3>
+                        <p class="indents-1">
+                            Monday: $8 a person for unlimited bowling starting at 5:00 pm until close<br><br>
+                            Tuesday: Every Tuesday get $2.00 games of bowling from 6:00 pm – Close<br><br>
+                            Wednesday: From 9:00 pm until close, take a $1.00 off every game of bowling.<br><br>
+                            Thursday: From 9:00 pm until close, we're featuring tap beer and shot specials, plus $8 gets you 3 games of bowling (shoes included)<br><br>
+                            Friday: Join us for one of our two sessions of Thunder Alley either 9:00 pm – 11:00 pm & 11:00 pm – 1:00 am. $11.00 a Person for 2 Hours of Bowling!<br><br>
+                            Saturday: Pay just $8.00 a person and enjoy 2 hours of unlimited bowling with great music! Starts every Saturday night at 9:00 pm!<br><br>
+                            Sunday: Stop in on Sundays after 5:00 pm and Buy 2 Games of bowling and get your 3rd Game FREE! Every time you get a Red Head Pin get a chance to win $250!
+                        </p>
+                    </div>
+                </div>
+                <div class="decoration"></div>
+                <h2 id="menu"><em>Menu</em>Bar and Grill</h2>
+            </div>            
+            <div class="gallery">
+                <div class="gallery_col-1">
+                    <a data-fancybox-group="gallery" href="circleB.html#Bar_Specials" class="gallery_item thumb lazy-img" style="padding-bottom: 93.96551724137931%;">
+                        <img data-src="images/happyHour.jpg" alt="">
+                        <div class="gallery_overlay"></div>
+                    </a>
+                    <a data-fancybox-group="gallery" href="circleB.html#Burgers" class="gallery_item thumb lazy-img" style="padding-bottom: 74.13793103448276%;">
+                        <img data-src="images/aBurger.jpg" alt="">
+                        <div class="gallery_overlay"></div>
+                    </a>
+                    <a data-fancybox-group="gallery" href="circleB.html#Appetizers" class="gallery_item thumb lazy-img" style="padding-bottom: 94.6551724137931%;">
+                        <img data-src="images/curds.jpg" alt="">
+                        <div class="gallery_overlay"></div>
+                    </a>
+                </div>
+                <div class="gallery_col-2">
+                    <a data-fancybox-group="gallery" href="circleB.html#Burgers" class="gallery_item thumb lazy-img" style="padding-bottom: 52.48322147651007%;">
+                        <img data-src="images/wSpecial.jpg" alt="">
+                        <div class="gallery_overlay"> </div>
+                    </a>
+                    <a data-fancybox-group="gallery" href="circleB.html#Q_W_grill" class="gallery_item thumb lazy-img" style="padding-bottom: 55.97315436241611%;">
+                        <img data-src="images/quesa.jpg" alt="">
+                        <div class="gallery_overlay"></div>
+                    </a>
+                    <a data-fancybox-group="gallery" href="circleB.html#Bar_Specials" class="gallery_item thumb lazy-img" style="padding-bottom: 96.10738255033557%;">
+                        <img data-src="images/dBeer.jpg" alt="">
+                        <div class="gallery_overlay"></div>
+                    </a>
+                </div>
+                <div class="gallery_col-3">
+                    <a data-fancybox-group="gallery" href="circleB.html#Bar_Specials" class="gallery_item thumb lazy-img" style="padding-bottom: 93.69676320272572%;">
+                        <img data-src="images/pBeer.jpg" alt="">
+                        <div class="gallery_overlay"></div>
+                    </a>
+                    <a data-fancybox-group="gallery" href="circleB.html#Nightly_Specials" class="gallery_item thumb lazy-img" style="padding-bottom: 72.23168654173765%;">
+                        <img data-src="images/mSpecial.jpg" alt="">
+                        <div class="gallery_overlay"></div>
+                    </a>
+                    <a data-fancybox-group="gallery" href="circleB.html#Appetizers" class="gallery_item thumb lazy-img" style="padding-bottom: 93.69676320272572%;">
+                        <img data-src="images/c_fries.jpg" alt="">
+                        <div class="gallery_overlay"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="parallax parallax1" data-parallax-speed="-0.4">
+            <div id="leagues" class="container">
+                <h2><em>Our </em>Leagues</h2>
+                <div class="row box-3">
+                    <div class="grid_3">
+                            <div id="bowling_league" class="img"><div class="lazy-img" style="padding-bottom: 76.21621621621622%;"><img data-src="images/bowling_league.jpg" alt=""></div></div>
+                            <h3>Bowling League</h3>
+                            <p>We have year round bowling leagues for begginers, experts, men, women, couples, families, seniors and youth bowlers<br><br>For specific details on each of these leagues, and more, click "Read more"!</p>
+                            <!--update href to go to /leages.html#bowling_league once i create this page -->
+                            <a href="#" class="btn">Read more</a><br>
+                        </div>
+                        <div class="grid_3">
+                            <div id="volleyball_league" class="img"><div class="lazy-img" style="padding-bottom: 76.21621621621622%;"><img data-src="images/volleyball_league.jpg" alt=""></div></div>
+                            <h3>Volleyball League</h3>
+                            <p>Choose from Tuesday, Wednesday or Thursday evenings, or Sunday afternoon’s throughout the Summer. <br><br>All of our volleyball leagues are co-ed leagues. We feature 2 regulation sand courts, a full service bar next to the courts and our full restaurant menu is available for delivery out to the volleyball area. Cost is $125 per team for the entire season.</p>
+                            <!--update href to go to /leages.html#volleyball -->
+                            <a href="#" class="btn">Read more</a>
+                        </div>
+                        <div class="grid_3">
+                            <div id="horseshoe_league" class="img"><div class="lazy-img" style="padding-bottom: 76.21621621621622%;"><img data-src="images/horseshoe_league.jpg" alt=""></div></div>
+                            <h3>Horse Shoe League</h3>
+                            <p>Choose from Tuesday, Wednesday, or Thursday Nights throughout the Summer. Horseshoe leagues consist of teams of 2 people.<br><br>
+                            Play 1 match a night of 3 games of 21 shoes each.<br><br>
+                            Cost is $50.00 a team for the whole season, and substitutes are allowed, so feel free to have subs.</p>
+                            <!--update href to go to /leages.html#horse_shoe-->
+                            <a href="#" class="btn">Read more</a>
+                        </div>
+                         <div class="grid_3">
+                            <div id="beanbag_league" class="img"><div class="lazy-img" style="padding-bottom: 76.21621621621622%;"><img data-src="images/beanbag_league.jpg" alt=""></div></div>
+                            <h3>Bean Bag League</h3>
+                            <p>Our bean bag toss leagues consist of 2 people per team. Playing 3 games to 21 against the same team a week.<br>Our equipment meet ACO regulations. We will try to form leagues on Tuesday, Wednesday, or Thursday nights throughout the Summer<br>We are now offering a Indoor Winter Bean Bag Toss league - approximately 10-12 week season.
+                            </p>
+                            <!--update href to go to /leages.html#bean_bag -->
+                            <a href="#" class="btn">Read more</a>
+                        </div>
+                </div>
+                <p class="indents-2">League play depends on the season, so double check the start and end dates before signing up! Please call or stop in for more details!</p>
+            </div>
+        </section>
+        <section class="well well__offset-1 bg-1">
+            <div class="container">
+                <h2 id="extras"><em>Extra</em>Fun</h2>
+                <div class="row row__offset-1">
+                    <div class="grid_4">
+                        <figure>
+                            <div id="bands" class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/band.jpg" alt=""></div>
+                            <figcaption>Bands</figcaption>
+                        </figure>
+                        <h3>Featuring Live Music</h3>
+                        <p>Come out for a night of bowling with live music entertainment! We host local bands to provide the jams you need to get your game face on. <br><br> For more information about dates, times, and names of the lives bands, click "Read more" below.</p>
+                    </div>
+                    <div class="grid_4">
+                        <figure>
+                            <div id="parties" class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/parties.jpg" alt=""></div>
+                            <figcaption>Parties</figcaption>
+                        </figure>
+                        <h3>Host A Party With Us!</h3>
+                        <p>Whether you're looking to host a birthday party or a corporate party, Circle "B" offers several bowling party packages guaranteed to meet your party needs! <br><br>
+                        Check out our Spare, Strike, and 300 Packages for additional details and price estimates.</p>
+                    </div>
+                    <div class="grid_4">
+                        <figure>
+                            <div id="nglSundays" class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/nflSundays.jpg" alt=""></div>
+                            <figcaption>NFL Sunday</figcaption>
+                        </figure>
+                        <h3>NFL Sunday football here at the “B”</h3>
+                        <p>We cater to the football fan here at Circle “B”! We feature 4 large HD TV’s including a 72″, 61″, 51″ and a 7′ projection screen. Plus the ability to show up to 7 different games at one time. You will always know what is going on in the NFL on Sundays!<br> Don’t forget to stop in and enjoy our Sunday Bar Specials, $7.75 Domestic Pitchers or Buckets of Miller Products for $15! Plus other great NFL Sunday specials!</p>
+                    </div>
+                </div>
+                <!-- change href to /extras.html page -->
+                <div class="decoration"><a href="#" class="btn">Read more</a></div>
+            </div>
+        </section>
+        <section class="well well__offset-2">
+            <div id="contact" class="container center">
+                <h2><em>Contact Us</em></h2><br>
+                <!-- insert google map image -->
+                <h3 class="index-4"> Hours of Operation:</h3><br>
+                M: 5:00 pm - 11:00 pm<br>
+                T 5:00 pm – 11:00 pm<br>
+                W 3:00 pm – 11:00 pm<br>
+                TH 3:00 pm – 11:00 pm<br>
+                F 3:00 pm – Midnight<br>
+                SAT 11:00 am – Midnight<br>
+                SUN 1:00 pm – 10:00 pm<br>
+                <p class="indents-2"> Circle “B” has always been a family owned business. We are in our 3rd generation of family ownership. Our goal is to be “Your Family Recreation Destination!” We provide you and your family with prompt friendly service, good times and happy memories that will last a lifetime.</p><br>
+                Circle "B" Recreation is happy to answer any questions, or respond to any concerns you may have.<br>
+                Please feel free to stop by in person or to give us a call!</p>
+                <address class="address-1">
+                    <dl><dt>Address:</dt> <dd>6261 Hwy 60, Cedarburg WI 53012</dd></dl>
+                    <p><em>(262) 377-8090</em></p>
+                </address>
+            </div>
+        </section>
+    </main>
+
+    <!--========================================================
+                              FOOTER
+    =========================================================-->
+    <footer>
+        <div class="container">
+            <ul class="socials">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-tumblr"></a></li>
+                <li><a href="#" class="fa fa-google-plus"></a></li>
+            </ul>
+            <div class="copyright">© <span id="copyright-year"></span> |
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+        <!--div class="tm"><a href="#"><img src="images/TM_logo.png" alt=""></a></div-->
+    </footer>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
